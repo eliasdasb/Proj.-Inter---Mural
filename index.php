@@ -1,4 +1,4 @@
-<!- Este é um Projeto Interdisciplinar do 2º ano INFONET de Artur Nogueira>
+<?/*<!- Este é um Projeto Interdisciplinar do 2º ano INFONET de Artur Nogueira>*/?>
     <html>
     <head>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
