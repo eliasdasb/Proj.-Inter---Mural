@@ -1,0 +1,40 @@
+footer {
+    background-color: #8C52FF;
+    font-family: "Inter", sans-serif;
+    padding: 21px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .container nav h2 {
+    font-size: 28px;
+    font-weight: 500;
+    color: #fff;
+    position: relative;
+    margin-bottom: 2px;
+}
+
+footer .container nav h2::after {
+    content: "";
+    height: 4px;
+    width: 60px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+}
+
+footer .container nav {
+    /* display: grid; */
+    gap: 12px;
+}
+
+footer .container nav a {
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    padding: 0;
+}
