@@ -1,152 +1,224 @@
 <!DOCTYPE html>
 
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="header.css">
+
+    <title> Mural AFA </title>
+
     <style>
+        .card-body {
+            text-align: center;
+            background: deeppink;
+            color: #fff;
+            border-radius: 20px;
+            padding: 20px;
+            height: 230px;
 
-    .card-body{
-        text-align:center;   
-        background: deeppink;
-        color: #fff;
-        border-radius: 20px;
-        padding: 20px;
-        height: 230px;
-       
-    }
+        }
 
-    .icone{
-        font-size: 45px;
-    }
+        .icone {
+            font-size: 45px;
+        }
 
-    .card-title{
-        font-size: 25px;
-    }
+        .card-title {
+            font-size: 25px;
+        }
 
-    .card{
-        border-radius: 20px;
-    }
+        .card {
+            border-radius: 30px;
+        }
 
-    p{
-        text-align: center;
-        font-size: 15px;
-        font-weight: bold;
-    }
+        p {
+            text-align: center;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .card-body img {
+            object-fit: cover;
+            width: 100%;
+            height: 90%;
+        }
     </style>
 
 </head>
 
 <body>
+    <header></header>
 
-    <object type="text/HTML" data="header.html"></object> 
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="img/slide.jpg" alt="Primeiro Slide">
+
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/slide.jpg" alt="Segundo Slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/slide.jpg" alt="Terceiro Slge">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
+    </div>
+    </div><br>
 
     <div class="container">
         <div class="row">
-        <div class="col-8">            
-            <div class="row">
-                <div class="col-6">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="icone">
-                                <i class="bi bi-exclamation-triangle"></i>
+            <div class="col-8">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="icone">
+                                    <i class="bi bi-exclamation-triangle"></i>
+                                </div>
+                                <h5 class="card-title">COMUNICADO</h5>
+                                <p class="card-text">Entrega do TCC</p>
+                                <p>Entrega de tcc - ADM</p>
                             </div>
-                            <h5 class="card-title">COMUNICADO</h5>
-                            <p class="card-text">Entrega do TCC</p>
-                            <p>Entrega de tcc - ADM</p>
-                        </div>
-                    
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="">
-                        <div class="card-body">
-                            <img src="img/etec.jpg" height="180px">
-                            <p>Inscrição do vestibulinho</p>
-                        </div>
-                    </div>
-                </div>                 
-            </div>
-            <div class="row">
-                <div class="col-6">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="icone">
-                                <i class="bi bi-exclamation-triangle"></i>
-                            </div>
-                            <h5 class="card-title">COMUNICADO</h5>
-                            <p class="card-text">Entrega do TCC</p>
-                            <p>Entrega de tcc - ADM</p>
-                        </div>
-                    
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="">
-                        <div class="card-body">
-                            <img src="img/inauguração.png" height="180px";>
-                            <p>Inauguração do mural AFA</p>
-                        </div>
-                    </div>
-                </div> 
-           
-               
 
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="">
+                            <div class="card-body">
+                                    <img src="img/etec.jpg">
+                                <p>Inscrição do vestibulinho</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="icone">
+                                    <i class="bi bi-exclamation-triangle"></i>
+                                </div>
+                                <h5 class="card-title">COMUNICADO</h5>
+                                <p class="card-text">Entrega do TCC</p>
+                                <p>Entrega de tcc - ADM</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="">
+                            <div class="card-body">
+                                    <img src="img/inauguração.png">
+                                <p>Inauguração do mural AFA</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="row">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Data</th>
+                                <th scope="col">Informações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">10/02</th>
+                                <td>Reposição de aula</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">15/02</th>
+                                <td>Não letivo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">25/02</th>
+                                <td>Não letivo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">02/03</th>
+                                <td>Projeto entre cursos</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">01/06</th>
+                                <td>Inicio das férias</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">01/07</th>
+                                <td>Volta ás aulas</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>Calendário</p>
+                </div>
             </div>
         </div>
-        <div class="col-4">
-             <div class="row">                
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                        <th scope="col">Data</th>
-                        <th scope="col">Informações</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                        <th scope="row">10/02</th>
-                        <td>Reposição de aula</td>
-                        </tr>
-                        <tr>
-                        <th scope="row">15/02</th>
-                        <td>Não letivo</td>
-                        </tr>
-                        <tr>
-                        <th scope="row">25/02</th>
-                        <td>Não letivo</td>
-                        </tr>
-                        <tr>
-                        <th scope="row">02/03</th>
-                        <td>Projeto entre cursos</td>
-                        </tr>
-                        <tr>
-                        <th scope="row">01/06</th>
-                        <td>Inicio das férias</td>
-                        </tr>
-                        <tr>
-                        <th scope="row">01/07</th>
-                        <td>Volta ás aulas</td>
-                        </tr>                                        
-                    </tbody>
-                </table>    
-                <p>Calendário</p>            
-            </div>
-        </div>
-    </div> 
     </div>
-</body>
+    <footer></footer>
+    <script>
 
+        fetch('./header.html')
+
+            .then(response => response.text())
+
+            .then(data => {
+
+                const headA = document.getElementsByTagName('header')[0];
+
+                const headerContentA = data;
+
+                headA.innerHTML += headerContentA;
+
+            });
+
+        fetch('./rodape.html')
+
+            .then(response => response.text())
+
+            .then(data => {
+
+                const head = document.getElementsByTagName('footer')[0];
+
+                const headerContent = data;
+
+                head.innerHTML += headerContent;
+
+            });
+    </script>
+
+
+
+
+</body>
