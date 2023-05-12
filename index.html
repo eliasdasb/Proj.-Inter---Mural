@@ -1,290 +1,161 @@
-<!- Este é um Projeto Interdisciplinar do 2º ano INFONET de Artur Nogueira ->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"> </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title> Mural AFA </title>
+</head>
+
+<body>
+    <header></header>
+
+    <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100"
+                        src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_186d0ea0769%20text%20%7B%20fill%3A%23555%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_186d0ea0769%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22234.03125%22%20y%3D%22217.7%22%3EPrimeiro%20Slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                        alt="Primeiro Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Meu Título</h5>
+                        <p>Um texto Legal</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100"
+                        src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_186d0ea0769%20text%20%7B%20fill%3A%23555%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_186d0ea0769%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22234.03125%22%20y%3D%22217.7%22%3EPrimeiro%20Slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                        alt="Segundo Slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100"
+                        src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_186d0ea0769%20text%20%7B%20fill%3A%23555%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_186d0ea0769%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22234.03125%22%20y%3D%22217.7%22%3EPrimeiro%20Slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                        alt="Terceiro Slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">AVISO!!!</h5>
+                        <p class="card-text">Entraremos em recesso do dia 23/12 até o dia 05/01.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card">
+                    <div class="card-body">
+
+                        <div class="row justify-content-md-center">
+                            <div class="      col-md-auto">
+                                <h5 class="card-title">Aula de hoje</h5>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-auto">
+                                <h6 class="card-subtitle mb-2 text-muted">Infonet</h6>
+                            </div>
+                        </div>
+
+
+
+                        <p class="card-text">PTCC 21:00 - 22:45</p>
+                        <p class="card-text">PAW 19:00 - 20:45</p>
+                        <h6 class="card-subtitle mb-2 text-muted">ADM</h6>
+                        <p class="card-text">PAW 19:00 - 20:45</p>
+                        <p class="card-text">PTCC 21:00 - 22:45</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Hoje</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Arroz, Feijão e Frango</h6>
+                        <p class="card-text">Segunda - Arroz, Feijão e Frango</p>
+                        <p class="card-text">Terça - Arroz, Feijão e Carne</p>
+                        <p class="card-text">Quarta - Sopa</p>
+                        <p class="card-text">Quinta - Arroz, Frango e Alface</p>
+                        <p class="card-text">Sexta - Arroz e Carne</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        fetch('./header.html')
+            .then(response => response.text())
+            .then(data => {
+                const headA = document.getElementsByTagName('header')[0];
+                const headerContentA = data;
+                headA.innerHTML += headerContentA;
+            });
+
+        fetch('./Rodape/rodape.html')
+            .then(response => response.text())
+            .then(data => {
+                const head = document.getElementsByTagName('html')[0];
+                const headerContent = data;
+                head.innerHTML += headerContent;
+            });
+    </script>
+
+     
+
     <html>
 
-    <head>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-            crossorigin="anonymous"></script>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
-
-        <style>
-            body,
-            header,
-            nav,
-            div,
-            ul,
-            li,
-            a,
-            img {
-                margin: 0;
-                font-family: 'Inter', sans-serif;
-                box-sizing: border-box;
-            }
-
-            ul {
-                list-style: none;
-                padding: 0;
-            }
-
-            a {
-                text-decoration: none;
-            }
-
-            .container {
-                width: min(1300px, 90vw);
-                margin: 0 auto;
-            }
-
-            header {
-                background-color: #8C52FF;
-            }
-
-            header nav {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                position: relative;
-            }
-
-            header nav .logo-a img {
-                height: 50px;
-            }
-
-            header nav .links-principais {
-                display: flex;
-                gap: 65px;
-            }
-
-            header nav .links-principais li a {
-                color: #fff;
-                font-size: 14px;
-                font-weight: 900;
-            }
-
-            header nav .links-principais li a:hover {
-                opacity: 0.7;
-                text-decoration:none;
-            }
-
-            header nav #botao-menu {
-                cursor: pointer;
-            }
-
-            header nav #botao-menu:hover {
-                opacity: 0.7;
-            }
-
-            header nav #dropdown-menu {
-                display: none;
-                flex-direction: column;
-                gap: 19px;
-                background-color: #8C52FF;
-                padding: 16px;
+    </script>
 
 
-                position: absolute;
-                right: 0;
-                bottom: 0px;
-                transform: translateY(100%);
-                z-index: 10;
-            }
-
-            header nav #dropdown-menu.ativo {
-                display: flex;
-            }
-
-            header nav #dropdown-menu li a {
-                color: #fff;
-                font-size: 18px;
-                font-weight: 900;
-            }
-
-            header nav #dropdown-menu li a:hover {
-                opacity: 0.7;
-                text-decoration:none;
-            }
-
-            @media (max-width: 600px) {
-                header nav .links-principais {
-                    gap: 20px;
-                }
-            }
-            
-            .card{
-			    border: 2px solid #000;
-			
-			}
-        </style>
-
-        <title>Mural Cardona</title>
-    </head>
-
-    <body>
-        <header>
-            <nav class="container">
-                <a class="logo-a" href="#">
-                    <img src="./logo.png" alt="Logo mural">
-                </a>
-                <ul class="links-principais">
-                    <li>
-                        <a href="#">INÍCIO</a>
-                    </li>
-                    <li>
-                        <a href="#">NOTÍCIAS</a>
-                    </li>
-                    <li>
-                        <a href="calendario.html">CALENDÁRIO</a>
-                    </li>
-                </ul>
-                <img id="botao-menu" class="icone-do-menu" src="./icone-do-menu.svg" alt="icone do menu">
-                <ul id="dropdown-menu">
-                    <li>
-                        <a href="#">Cursos</a>
-                    </li>
-                    <li>
-                        <a href="#">Vagas de estágio</a>
-                    </li>
-                    <li>
-                        <a href="#">Guia de Carreira</a>
-                    </li>
-                    <li>
-                        <a href="#">Achados e perdidos</a>
-                    </li>
-                    <li>
-                        <a href="#">Contato</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false"
-                    aria-label="Alterna navegação">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Informativos</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Agenda
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="calendario.html">Calendario</a>
-                                <a class="dropdown-item" href="#">Datas de Provas</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Cardápio</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#">Contato</a>
-                        </li>
-                    </ul>
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar"
-                            aria-label="Pesquisar">
-                        <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Pesquisar</button>
-                    </form>
-                </div>
-            </div>
-        </nav> -->
-       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100"
-                            src="./slide.jpg"
-                            alt="Primeiro Slide">
-                        
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100"
-                            src="./slide.jpg"
-                            alt="Segundo Slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100"
-                            src="./slide.jpg"
-                            alt="Terceiro Slge">
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Anterior</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Próximo</span>
-                </a>
-            </div>
-        </div><br>
-
-        <div class="container">
-			<div class="card-deck">
-				<div class="card">	
-					<div class="card-body">
-						<h5 class="card-title text-center font-weight-bold">Avisos!!!</h5>
-						<p class="card-text">Entraremos em recesso do dia 23/12 até o dia 05/01.</p>
-						<p class="card-text">Reposição no sábado online 12/05 referente ao dia 07/04.</p>
-					</div>
-				</div>
-				<div class="card">
-					<div class="card-body">
-						<h5 class="card-title text-center font-weight-bold">Aula de hoje</h5>
-						<p class="card-text">PTCC - 	21:00 - 22:45</p>
-						<p class="card-text">PAW  - 	19:00 - 20:45</p> 
-						<p>&nbsp</p>
-						<p>&nbsp</p>
-						<center><a href="calendario.html" class="btn btn-primary">Acesse o Calendário</a></center>
-					</div>
-    
-				</div>
-				<div class="card">
-					<div class="card-body">
-						<h5 class="card-title text-center font-weight-bold">Cardárpio</h5>
-                        <p class="card-text"><b>Segunda -</b>Arroz, Feijão e Frango</p>
-                        <p class="card-text"><b>Terça -</b> Arroz, Feijão e Carne</p>
-						<p class="card-text"><b>Quarta -</b> Sopa</p>
-						<p class="card-text"><b>Quinta -</b> Arroz, Frango e Alface</p>
-						<p class="card-text"><b>Sexta -</b> Arroz e Carne</p>
-					</div>
-    
-				</div>
-			</div>
-		</div>
 
 
-        <script>
-            const botaoMenu = document.querySelector("#botao-menu")
-            const dropdownMenu = document.querySelector("#dropdown-menu")
+</body>
 
-            botaoMenu.addEventListener("click", () => {
-                dropdownMenu.classList.toggle("ativo")
-            })
-        </script>
-    </body>
-
-    </html>
+</html>
