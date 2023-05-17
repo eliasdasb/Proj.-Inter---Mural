@@ -117,6 +117,14 @@
                 const headerContentA = data;
                 headA.innerHTML += headerContentA;
             });
+	    
+	 	fetch('./head.html')
+           .then(response => response.text())
+            .then(data => {
+                const headB = document.getElementsByTagName('head')[0];
+                const headerContentB = data;
+                headB.innerHTML += headerContentB;
+            });
 
         fetch('footer.html')
             .then(response => response.text())
