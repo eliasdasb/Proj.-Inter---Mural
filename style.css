@@ -23,6 +23,8 @@
 			.container {
 			    width: min(1300px, 90vw);
 			    margin: 0 auto;
+				display: flex;
+			 	justify-content: center;
 			}
 
 			header {
@@ -130,109 +132,6 @@
 			        display: none;
 			    }
 			}
-
-
-
-
-/* 			body,
-			header,
-			nav,
-			div,
-			ul,
-			li,
-			a,
-			img {
-			    margin: 0;
-			    font-family: 'Inter', sans-serif;
-			    box-sizing: border-box;
-			}
-
-			ul {
-			    list-style: none;
-			    padding: 0;
-			}
-
-			a {
-			    text-decoration: none;
-			}
-
-			.container {
-			    width: min(1300px, 90vw);
-			    margin: 0 auto;
-			}
-
-			header {
-			    background-color: #8C52FF;
-			}
-
-			header nav {
-			    display: flex;
-			    justify-content: space-between;
-			    align-items: center;
-			    position: relative;
-			}
-
-			header nav .logo-a img {
-			    height: 50px;
-			}
-
-			header nav .links-principais {
-			    display: flex;
-			    gap: 65px;
-			    margin: 0 auto;
-			}
-
-			header nav .links-principais li a {
-			    color: #fff;
-			    font-size: 14px;
-			    font-weight: 900;
-			}
-
-			header nav .links-principais li a:hover {
-			    opacity: 0.7;
-			    text-decoration: none;
-			}
-
-			header nav #botao-menu {
-			    cursor: pointer;
-			}
-
-			header nav #botao-menu:hover {
-			    opacity: 0.7;
-			}
-
-			header nav .dropdown-menu {
-			    display: flex;
-			    flex-direction: column;
-			    gap: 19px;
-			    background-color: #8C52FF;
-			    padding: 16px;
-			    border: none;
-			    border-radius: 0px;
-			    width: max-content;
-			    z-index: 10;
-			}
-
-			header nav .dropdown-menu.ativo {
-			    display: flex;
-			}
-
-			header nav .dropdown-menu li a {
-			    color: #fff;
-			    font-size: 18px;
-			    font-weight: 900;
-			}
-
-			header nav .dropdown-menu li a:hover {
-			    opacity: 0.7;
-			    text-decoration: none;
-			}
-
-			.mobile {
-			    display: none;
-			}
-*/
-
 		
 			    .card-body {
             text-align: center;
@@ -271,11 +170,7 @@
          font-family: "Inter", sans-serif;
          padding: 21px 0;
         } 
-        .container {
-            display: flex;
-            justify-content: space-between;
-            
-        }
+       
         footer .container nav h2 {
             font-size: 28px;
             font-weight: 500;
