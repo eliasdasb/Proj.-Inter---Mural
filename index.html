@@ -80,20 +80,22 @@
 		</div>
 	<footer></footer>
     <script>
-        fetch('header.html')
-            .then(response => response.text())
-            .then(data => {
-                const headA = document.getElementsByTagName('header')[0];
-                const headerContentA = data;
-                headA.innerHTML += headerContentA;
-            });
-	    
-	 	fetch('head.html')
+       
+	    fetch('head.html')
            .then(response => response.text())
             .then(data => {
                 const headB = document.getElementsByTagName('head')[0];
                 const headerContentB = data;
                 headB.innerHTML += headerContentB;
+            });
+	    
+	    
+	    fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                const headA = document.getElementsByTagName('header')[0];
+                const headerContentA = data;
+                headA.innerHTML += headerContentA;
             });
 
         fetch('footer.html')
