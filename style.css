@@ -303,10 +303,16 @@
             height: 90%;
         }
         footer {
-         background-color: #8C52FF;
-         font-family: "Inter", sans-serif;
-         padding: 21px 0;
+         	background-color: #8C52FF;
+         	font-family: "Inter", sans-serif;
+         	padding: 21px 0;
         } 
+
+		.container {
+    		display: flex;
+    		justify-content: space-between;
+		}
+
        
         footer .container nav h2 {
             font-size: 28px;
@@ -316,7 +322,7 @@
             margin-bottom: 2px;
             
         }
-        footer .container nav h2::after {
+        	footer .container nav h2::after {
             content: "";
             height: 4px;
             width: 60px;
@@ -328,7 +334,7 @@
             }
             
 		 footer .container nav {
-            display: grid; 
+/*             display: grid;  */
            	gap: 12px;
 }
             
