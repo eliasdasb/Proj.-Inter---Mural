@@ -9,6 +9,7 @@
 				margin: 0;
 				font-family: 'Inter', sans-serif;
 				box-sizing: border-box;
+				text-decoration: none !important;
 			}
 
 			ul {
@@ -65,7 +66,7 @@
 			.btn-secondary.focus .btn-secondary:focus {
 				outline: none;
 				border: none;
-				background-color: transparent;
+				background-color: transparent; !important;
 				--bs-btn-active-bg: transparent;
 				box-shadow: none !important;
 			}
