@@ -63,10 +63,10 @@
 			header nav button.dropdown-toggle:hover,
 			header nav button.dropdown-toggle:active,
 			header nav button.btn-secondary:not(:disabled):not(.disabled):active,
-			.btn-secondary.focus .btn-secondary:focus {
+			.btn-secondary:focus {
 				outline: none;
 				border: none;
-				background-color: transparent; !important;
+				background-color: transparent !important;
 				--bs-btn-active-bg: transparent;
 				box-shadow: none !important;
 			}
@@ -92,7 +92,7 @@
 				background-color: #8C52FF;
 				padding: 16px;
 				border: none;
-				border-radius: 0px;
+				border-radius: 20px;
 				width: max-content;
 				z-index: 10;
 				position: absolute;
