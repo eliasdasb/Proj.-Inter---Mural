@@ -301,3 +301,48 @@ a:hover, a:focus {
 .card[data-color="blue"] .description {
     color: #506568;
 }
+
+
+
+#principal{
+	width:1544px;
+	max-height: auto;
+	padding:0px;
+	margin:0px;
+}
+
+#principal>div{
+	padding:25px;
+}
+
+.botao{
+	border:0 none;
+	border-radius:5px;
+	box-shadow: 0 0 0 0;
+    outline: 0;
+	background:#8C52FF;
+	padding:6px 12px;
+}
+
+#principal>.perdidos{
+	position: absolute;
+	width: 524px;
+	height: 807px;
+	left: 1020px;
+	top:67px;
+	border-left:1px solid rgb(173,173,173);
+}
+
+
+#achados .col{
+	border:2px solid rgb(173, 173, 173);
+	margin:5px;
+	border-radius:10px;
+}
+
+.center{
+	display:block;
+	align-items: center;
+	text-align: center;
+	margin:0 auto;
+}
