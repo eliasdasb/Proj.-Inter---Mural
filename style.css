@@ -350,6 +350,19 @@ a:hover, a:focus {
 	margin:0 auto;
 }
 
+.div-achados{
+	border-right:1px solid rgb(173,173,173);
+	max-width: 1000px; 
+	margin-left: 3px;
+}
+
+#achados-perdido p{
+	font-weight:normal;
+}
+.form{
+	margin:5px;
+}
+
 /* Calendario */
 
 .img{		
