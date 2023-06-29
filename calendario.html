@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Calendário</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+		
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+<!-- 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script> -->
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+		crossorigin="anonymous"></script>
+	
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+		crossorigin="anonymous"></script>
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"> </script>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+		
+	</head>
+	<body>
+		<header> </header>
+		<script>
+			function openCity(evt, cityName) {
+				var i, tabcontent, tablinks;
+				tabcontent = document.getElementsByClassName("tabcontent");
+				for (i = 0; i < tabcontent.length; i++) {
+					tabcontent[i].style.display = "none";
+				}
+				tablinks = document.getElementsByClassName("tablinks");
+				for (i = 0; i < tablinks.length; i++) {
+					tablinks[i].className = tablinks[i].className.replace(" active", "");
+				}
+				document.getElementById(cityName).style.display = "block";
+				evt.currentTarget.className += " active";
+			}
+		</script>
+		
+		<div class="tab">
+			<button class="tablinks active" onclick="openCity(event, 'calendario')">Calendário</button>
+			<button class="tablinks" onclick="openCity(event, 'horario')">Horário</button>
+		</div>
+		<div id="calendario" class="tabcontent" style="display:block;">
+			<script>
+				function openday(evt, dayName) {
+					var i, tabcontente, tablinkss;
+					tabcontente = document.getElementsByClassName("tabcontente");
+					for (i = 0; i < tabcontente.length; i++) {
+						tabcontente[i].style.display = "none";
+					}
+					tablinkss = document.getElementsByClassName("tablinkss");
+					for (i = 0; i < tablinkss.length; i++) {
+						tablinkss[i].className = tablinkss[i].className.replace(" active", "");
+					}
+					document.getElementById(dayName).style.display = "block";
+					evt.currentTarget.className += " active";
+				}
+			</script>
+			<table>
+				<tr>
+				<th colspan="7">Abril</th>
+				</tr>
+				<tr>
+					<th>Segunda</th>
+					<th>Terça</th>
+					<th>Quarta</th>
+					<th>Quinta</th>
+					<th>Sexta</th>
+					<th>Sábado</th>
+					<th>Domingo</th>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="semaula">1</td>
+					<td class="domingo">2</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>4</td>
+					<td>5</td>
+					<td>6</td>
+					<td class="tablinkss semaula" onclick="openday(event, 'day7')">7</td>
+					<td td class="semaula">8</td>
+					<td class="domingo">9</td>
+				</tr>
+				<tr>
+					<td class="tablinkss semaula" onclick="openday(event, 'day10')">10</td>
+					<td>11</td>
+					<td class="tablinkss avisos" onclick="openday(event, 'day12')">12</td>
+					<td>13</td>
+					<td>14</td>
+					<td class="tablinkss avisos" onclick="openday(event, 'day15')">15</td>
+					<td class="domingo">16</td>
+				</tr>
+				<tr>
+					<td>17</td>
+					<td>18</td>
+					<td class="tablink or" onclick="openday(event, 'day19')">19</td>
+					<td>20</td>
+					<td  class="tablinkss semaula" onclick="openday(event, 'day21')">21</td>
+					<td td class="semaula">22</td>
+					<td class="domingo">23</td>
+				</tr>
+				<tr>
+					<td class="tablinkss avisos" onclick="openday(event, 'day24')">24</td>
+					<td class="tablinkss avisos" onclick="openday(event, 'day25')">25</td>
+					<td>26</td>
+					<td>27</td>
+					<td>28</td>
+					<td td class="semaula">29</td>
+					<td class="domingo">30</td>
+				</tr>
+			</table>
+			
+			<div class="legenda">	
+				<table>
+					<tr>
+						<td class="avisos">Avisos</td>
+					</tr>
+					<tr>
+						<td class="semaula">Dia não Letivo</td>
+					</tr>
+					<tr>
+						<td class="or">Outras Reuniões - Letivo</td>			
+					</tr>
+				</table>
+				
+				<div class="quadro">
+					<div id="day7" class="tabcontente" style="display:none;">
+						<h1>Dia 7</h1>
+						<p>Feriado Nacional (Paixão de Cristo)</p>
+					</div>
+					<div id="day10" class="tabcontente" style="display:none;">
+						<h1>Dia 10</h1>
+						<p>Feriado Municipal</p>
+					</div>
+					<div id="day12" class="tabcontente" style="display:none;">
+						<h1>Dia 12</h1>
+						<p>Reunião de Curso</p>
+					</div>
+					<div id="day15" class="tabcontente" style="display:none;">
+						<h1>Dia 15</h1>
+						<p> Sábado Letivo referente ao dia 05/07 (quarta-feira)<p>
+					</div>
+					<div id="day19" class="tabcontente" style="display:none;">
+						<h1>Dia 19</h1>
+						<p>Encerramento do 1º Bimestre<p>
+					</div>
+					<div id="day21" class="tabcontente" style="display:none;">
+						<h1>Dia 21</h1>
+						<p>Feriado Nacional (Tiradentes)</p>
+					</div>
+					<div id="day24" class="tabcontente" style="display:none;">
+						<h1>Dia 24</h1>
+						<p> Conselho de Classe Intermediário</p>
+					</div>
+					<div id="day25" class="tabcontente" style="display:none;">
+						<h1>Dia 25</h1>
+						<p>Conselho de Classe Intermediário</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+
+		
+		<div id="horario" class="tabcontent">
+			<h3>Horário das aulas INFOMÁTICA</h3>
+			<table>
+				<tr>
+					<th>Dia</th>
+					<th>1º Período<br>18:53 - 20:45</th>
+					<th>2º Período<br>20:00 - 21:53</th>
+				</tr>
+				<tr>
+					<td>Segunda-feira</td>
+					<td>Projeto de Aplicações Web I<br>PROF: Elias da Silva Bento</td>
+					<td>Planejamento do TCC em Informática para Internet<br>PROF: Elias da Silva Bento</td>
+				</tr>
+				<tr>
+					<td>Terça-feira</td>
+					<td>Criação e Editoração de Imagens<br>PROF: Elias da Silva Bento</td>
+					<td>Composição e Projeto<br>PROF: Elias da Silva Bento</td>
+				</tr>
+				<tr>
+					<td>Quarta-feira</td>
+					<td>Desenvolvimento e Design de Websites II<br>PROF: Elias da Silva Bento</td>
+					<td>Redes de Comunicação de Dados I<br>PROF: </td>
+				</tr>
+				<tr>
+					<td>Quinta-feira</td>
+					<td>Operação de Softwares Aplicativos II<br>PROF: </td>
+					<td>Tecnologias e Linguagens para Banco de Dados I<br>PROF: </td>
+				</tr>
+				<tr>
+					<td>Sexta-feira</td>
+					<td>Desenvolvimento de Software I<br>PROF: </td>
+					<td>Desenvolvimento de Software I<br>PROF: </td>
+				</tr>
+			</table>
+		</div>
+		
+	<footer> </footer>
+	
+	<script>
+       
+	    fetch('head.html')
+           .then(response => response.text())
+            .then(data => {
+                const headB = document.getElementsByTagName('head')[0];
+                const headerContentB = data;
+                headB.innerHTML += headerContentB;
+            });
+	    
+	    
+	    fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                const headA = document.getElementsByTagName('header')[0];
+                const headerContentA = data;
+                headA.innerHTML += headerContentA;
+            });
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                const head = document.getElementsByTagName('footer')[0];
+                const headerContent = data;
+                head.innerHTML += headerContent;
+            });
+    
+	</script>
+		
+	</body>
+
+</html>

@@ -1,0 +1,451 @@
+/* Header **/
+
+			body,
+			header,
+			nav,
+			div,
+			ul,
+			li,
+			a,
+			img {
+				margin: 0;
+				font-family: 'Inter', sans-serif;
+				box-sizing: border-box;
+				text-decoration: none !important;
+			}
+
+			ul {
+				list-style: none;
+				padding: 0;
+			}
+
+			a {
+				text-decoration: none;
+			}
+
+			.container {
+				width: min(1300px, 90vw);
+				margin: 0 auto;
+			}
+
+			header {
+				background-color: #8C52FF;
+			}
+
+			header nav {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				position: relative;
+			}
+
+			header nav .logo-a img {
+				height: 50px;
+			}
+
+			header nav .links-principais {
+				display: flex;
+				gap: 65px;
+				margin: 0 auto;
+			}
+
+			header nav .links-principais li a {
+				color: #fff;
+				font-size: 14px;
+				font-weight: 900;
+				text-decoration:none;
+			}
+
+			header nav .links-principais li a:hover {
+				opacity: 0.7;
+				text-decoration: none;
+			}
+
+			header nav button.dropdown-toggle,
+			header nav button.dropdown-toggle:hover,
+			header nav button.dropdown-toggle:active,
+			header nav button.btn-secondary:not(:disabled):not(.disabled):active,
+			.btn-secondary:focus,
+			.navbar-toggler:focus{
+				outline: none;
+				border: none;
+				background-color: transparent !important;
+				--bs-btn-active-bg: transparent;
+				box-shadow: none !important;
+			}
+
+			.navbar-toggler-icon {
+				display: inline-block;
+				width: 1.5em;
+				height: 1.5em;
+				vertical-align: middle;
+				background-image: var(--bs-navbar-toggler-icon-bg);
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: 100%;
+			}
+
+			header nav button.dropdown-toggle::after {
+				display: none;
+			}
+
+			header nav .dropdown-menu {
+				flex-direction: column;
+				gap: 19px;
+				background-color: #8C52FF;
+				padding: 16px;
+				border: none;
+				border-radius: 0px 0px 20px 20px;
+				width: max-content;
+				z-index: 10;
+				position: absolute;
+				right: 300px;
+				box-sizing: border-box;
+				left: 0;
+			}
+
+			header nav .dropdown-menu.show {
+				display: flex;
+			}
+
+			header nav .dropdown-menu li a {
+				color: #fff;
+				font-size: 16px;
+				font-weight: 700;
+			}
+
+			header nav .dropdown-menu li a:hover {
+				opacity: 0.7;
+				text-decoration: none;
+			}
+
+			.mobile {
+				display: none;
+			}
+
+			@media (max-width: 992px) {
+				header nav .links-principais {
+					gap: 20px;
+				}
+
+				.mobile {
+					display: block;
+				}
+
+				.desktop {
+					display: none;
+				}
+			}
+
+			.bi.bi-list {
+				color: #fff;
+				font-size: 50px;
+			}
+		
+/*  */
+
+			    .card-body {
+            text-align: center;
+            background: deeppink;
+            color: #fff;
+            border-radius: 20px;
+            padding: 20px;
+            height: 230px;
+
+        }
+
+        .icone {
+            font-size: 45px;
+        }
+
+        .card-title {
+            font-size: 25px;
+        }
+
+        .card {
+            border-radius: 30px;
+        }
+
+       #noticias p {
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .card-body img {
+            object-fit: cover;
+            width: 100%;
+            height: 90%;
+        }
+        
+
+/* Rodapé */
+	footer {
+         	background-color: #8C52FF;
+         	font-family: "Inter", sans-serif;
+         	padding: 10px 0;
+        } 
+
+		.container {
+    		display: flex;
+    		justify-content: space-between;
+		}
+
+       
+        footer .container nav h2 {
+            font-size: 20px;
+            font-weight: 500;
+            color: #fff;
+            position: relative;
+            margin-bottom: 2px;
+            
+        }
+        	footer .container nav h2::after {
+            content: "";
+            height: 4px;
+            width: 60px;
+            background-color: #fff;
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            
+            }
+            
+	footer .container nav {
+           gap: 8px;
+}
+            
+        footer .container nav a {
+            font-size: 14px;
+            font-weight: 500;
+            color: #fff;
+            padding: 0;
+            
+        }
+		footer .container nav a:hover {
+			color:#fff;
+}
+
+/*  */
+
+.card-big-shadow {
+    max-width: 400px;
+    position: relative;
+}
+
+.coloured-cards .card {
+    margin-top: 30px;
+}
+
+.card[data-radius="none"] {
+    border-radius: 0px;
+}
+.card {
+    border-radius: 20px !important;
+    box-shadow: 0 2px 2px rgba(204, 197, 185, 0.5);
+    background-color: #FFFFFF;
+    color: #252422;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+
+.card[data-background="image"] .title, .card[data-background="image"] .stats, .card[data-background="image"] .category, .card[data-background="image"] .description, .card[data-background="image"] .content, .card[data-background="image"] .card-footer, .card[data-background="image"] small, .card[data-background="image"] .content a, .card[data-background="color"] .title, .card[data-background="color"] .stats, .card[data-background="color"] .category, .card[data-background="color"] .description, .card[data-background="color"] .content, .card[data-background="color"] .card-footer, .card[data-background="color"] small, .card[data-background="color"] .content a {
+    color: #FFFFFF;
+}
+.card.card-just-text .content {
+    padding: 50px 65px;
+    text-align: left;
+}
+.card .content {
+    padding: 20px 20px 10px 20px;
+}
+.card[data-color="blue"] .category {
+    color: #7a9e9f;
+}
+
+.card .category, .card .label {
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+.card-big-shadow:before {
+    background-image: url("http://static.tumblr.com/i21wc39/coTmrkw40/shadow.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    bottom: -12%;
+    content: "";
+    display: block;
+    left: -12%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+}
+h4, .h4 {
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 1.2em;
+}
+h6, .h6 {
+    font-size: 0.9em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.card .description {
+    font-size: 16px;
+    color: #66615b;
+}
+.content-card{
+    margin-top:30px;    
+}
+a:hover, a:focus {
+    text-decoration: none;
+}
+.card[data-color="blue"] {
+    background: #b8d8d8;
+}
+.card[data-color="blue"] .description {
+    color: #506568;
+}
+
+/*  Achados e perdidos */
+
+#principal{
+	width:1544px;
+	max-height: auto;
+	padding:0px;
+	margin:0px;
+}
+
+#principal>div{
+	padding:25px;
+}
+
+.botao{
+	border:0 none;
+	border-radius:5px;
+	box-shadow: 0 0 0 0;
+    outline: 0;
+	background:#8C52FF;
+	padding:6px 12px;
+}
+
+#principal>.perdidos{
+	position: absolute;
+	width: 524px;
+	height: 807px;
+	left: 1020px;
+	top:67px;
+	border-left:1px solid rgb(173,173,173);
+}
+
+
+#achados .col{
+	border:2px solid rgb(173, 173, 173);
+	margin:5px;
+	border-radius:10px;
+}
+
+.center{
+	display:block;
+	align-items: center;
+	text-align: center;
+	margin:0 auto;
+}
+
+.div-achados{
+	border-right:1px solid rgb(173,173,173);
+	max-width: 1000px; 
+	margin-left: 3px;
+}
+
+#achados-perdido p{
+	font-weight:normal;
+}
+.form{
+	margin:5px;
+}
+
+/* Calendario */
+
+.img{		
+				top:3px;
+				position:absolute; 
+				left:20px
+			}
+
+			.tab{
+				overflow: hidden;
+				border: 1px solid #ccc;
+				background-color: #f1f1f1;
+			
+			}
+
+			.tab button{
+				background-color: inherit;
+				float: left;
+				border: none;
+				outline: none;
+				cursor: pointer;
+				padding: 14px 16px;
+				transition: 0.3s;
+			}
+
+			.tab button:hover{
+				background-color: #ddd;
+			}
+
+			.tab button.active{
+				background-color: #ccc;
+			}
+
+			.tabcontent{
+				display: none;
+				padding: 6px 12px;
+				border-top: none;
+			}
+			
+			table{
+				border-collapse: collapse;
+				width: 100%;
+				text-align: center;
+			}
+			
+			td{
+				padding: 10px;
+				border: 1px solid black;
+			}
+			
+			th{
+				padding: 10px;
+				background-color: lightgray;
+				border: 1px solid black;
+			}
+			.or{
+				background-color:lightgreen;
+			}
+			
+			.avisos{
+				background-color:lightblue;
+			}
+			
+			.semaula{
+				background-color:red;
+			}
+			
+			.legenda{
+				position:relative;
+				width:17.5%;
+				right:-82.5%;
+				top:-1px;
+			}
+			
+			.quadro{
+				position:absolute;
+				left:-471.5%;
+				top:-0.15%;	
+			}
+			
+			.domingo{
+			color:red}
+	
